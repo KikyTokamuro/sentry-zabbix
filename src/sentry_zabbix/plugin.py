@@ -14,6 +14,7 @@ from sentry.constants import STATUS_UNRESOLVED
 from sentry.models import Activity
 from .zbxsend import Metric, send_to_zabbix
 from sentry_zabbix.forms import ZabbixOptionsForm
+from . import VERSION
 
 logger = logging.getLogger(__name__)
 
@@ -24,7 +25,7 @@ class ZabbixPlugin(NotificationPlugin):
     """
     author = 'Sabin Iacob'
     author_url = 'https://github.com/m0n5t3r/sentry-zabbix'
-    version = sentry_zabbix.VERSION
+    version = VERSION
     description = 'Send error counts to Zabbix.'
     slug = 'zabbix'
     title = 'Zabbix'
