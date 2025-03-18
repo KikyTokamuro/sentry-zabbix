@@ -11,10 +11,10 @@ f.close()
 
 setup(
     name='sentry-zabbix',
-    version='0.0.16',
-    author='Sabin Iacob',
-    author_email='iacobs+pypi@gmail.com',
-    url='http://github.com/m0n5t3r/sentry-zabbix',
+    version='0.0.17',
+    author='KikyTokamuro',
+    author_email='kiky.tokamuro@yandex.ru',
+    url='https://github.com/KikyTokamuro/sentry-zabbix',
     description='A Sentry extension which send errors stats to Zabbix',
     long_description=readme,
     license='WTFPL',
