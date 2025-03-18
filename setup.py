@@ -17,7 +17,7 @@ setup(
     url='https://github.com/KikyTokamuro/sentry-zabbix',
     description='A Sentry extension which send errors stats to Zabbix',
     long_description=readme,
-    license='WTFPL',
+    license='MIT',
     package_dir={'': 'src'},
     packages=find_packages('src'),
     install_requires=install_requires,
