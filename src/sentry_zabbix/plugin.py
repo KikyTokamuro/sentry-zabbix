@@ -23,8 +23,8 @@ class ZabbixPlugin(NotificationPlugin):
     """
     Sentry plugin to send error counts to Zabbix.
     """
-    author = 'Sabin Iacob'
-    author_url = 'https://github.com/m0n5t3r/sentry-zabbix'
+    author = 'KikyTokamuro'
+    author_url = 'https://github.com/KikyTokamuro/sentry-zabbix'
     version = VERSION
     description = 'Send error counts to Zabbix.'
     slug = 'zabbix'
@@ -32,9 +32,9 @@ class ZabbixPlugin(NotificationPlugin):
     conf_key = slug
     conf_title = title
     resource_links = [
-        ('Source', 'https://github.com/m0n5t3r/sentry-zabbix'),
-        ('Bug Tracker', 'https://github.com/m0n5t3r/sentry-zabbix/issues'),
-        ('README', 'https://github.com/m0n5t3r/sentry-zabbix/blob/master/README.rst'),
+        ('Source', 'https://github.com/KikyTokamuro/sentry-zabbix'),
+        ('Bug Tracker', 'https://github.com/KikyTokamuro/sentry-zabbix/issues'),
+        ('README', 'https://github.com/KikyTokamuro/sentry-zabbix/blob/master/README.rst'),
     ]
     project_conf_form = ZabbixOptionsForm
 

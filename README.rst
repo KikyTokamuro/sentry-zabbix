@@ -5,14 +5,16 @@ An extension for Sentry to send event counts to Zabbix; shamelessly based on sen
 This will send keys formatted like ``<prefix>.<level>[<project>]`` (e.g. 
 ``sentry.error[my-thing]``), which will need to be configured as items in Zabbix.
 
-If you run a Sentry version older than 8, use sentry-zabbix <=0.0.13
+Tested on sentry 25.2.0.
 
 Install
 -------
 
 Install the package with ``pip``::
 
-    pip install sentry-zabbix
+    git clone https://github.com/KikyTokamuro/sentry-zabbix
+    cd sentry-zabbix
+    pip install .
 
 
 Configuration
@@ -21,7 +23,7 @@ Configuration
 Go to your project's configuration page (Projects -> [Project]) and select the
 "Zabbix" tab. Enter the Zabbix host, port and prefix for metrics:
 
-.. image:: https://github.com/m0n5t3r/sentry-zabbix/raw/master/docs/images/options.png
+.. image:: https://github.com/KikyTokamuro/sentry-zabbix/raw/master/docs/images/options.png
 
 
 After installing and configuring, make sure to restart sentry-worker and sentry-web for the
