@@ -3,7 +3,6 @@ from setuptools import setup, find_packages
 
 install_requires = [
     'sentry>=8.0.0',
-    'zbxsend',
 ]
 
 f = open('README.rst')
