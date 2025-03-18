@@ -12,7 +12,7 @@ from django.utils import timezone
 from sentry.plugins.bases.notify import NotificationPlugin
 from sentry.constants import STATUS_UNRESOLVED
 from sentry.models import Activity
-from zbxsend import Metric, send_to_zabbix
+from .zbxsend import Metric, send_to_zabbix
 from sentry_zabbix.forms import ZabbixOptionsForm
 
 logger = logging.getLogger(__name__)
